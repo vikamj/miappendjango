@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html>
-<title>Dirrección errónea</title>
-<body>
+{% extends "master.html" %}
 
-<h1>Ooops!</h1>
+{% block title %}404 - No Encontrado{% endblock %}
 
-<h2>No se ha podido encontrar la dirección</h2>
+{% block content %}
 
-</body>
-</html>
+<h1>Ooops! - No pude encontrar eso :(</h1>
+
+<h2>La página o el recurso que has solicitado no existe.</h2>
+
+{% endblock %}
