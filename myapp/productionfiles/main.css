@@ -1,20 +1,71 @@
-.my-footer{
-    background-color: lightseagreen;
-    color: #fff;
-    padding: 10px;
+body {
+    background-color:#f1f1f1;
+    font-family: verdana;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
     text-align: center;
+} 
+
+/* Sidebar */
+#sidebar {
+    width: 280px;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
 }
+
+#sidebar-nav span {
+    display: inline-block;
+    width: 80%;
+    text-align: left;
+}
+.nav-item {
+    background-color: lightseagreen;
+}
+
+/*Footer*/
+footer{
+    background-color: lightseagreen;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-top: 20px;
+}
+footer li {
+    margin: 0px;
+    padding-left: 0;
+    list-style: none;
+    display: inline;
+    padding: 20px;
+}
+footer ul {
+    margin: 0px;
+    padding-left: 0;
+}
+.main p {
+    margin-top: 100px;
+}
+
+
+
+
+
+/*Estilos de w3schools*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600&display=swap');
 body {
   margin:0;
   font: 600 18px 'Source Sans Pro', sans-serif;
   letter-spacing: 0.64px;
   color: #585d74;
+  min-height: 100vh;
 }
 .topnav {
   background-color: lightseagreen;
   color:#ffffff;
-  padding:10px;
+  padding:15px;
+  display: flex;
+  justify-content: end;
 }
 .topnav a:link, .topnav a:visited {
   text-decoration: none;
@@ -39,14 +90,14 @@ body {
   color:#ffffff;
   margin:20px 0 60px 0;
 }
-ul {
+.mycard ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
-li {
+.mycard li {
   background-color: #ffffff;
-  background-image: linear-gradient(to right, lightseagreen, rgb(30, 130, 125)); 
+  background-image: linear-gradient(to right, lightseagreen, rgb(41, 152, 146)); 
   background-size: 50px 60px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -57,13 +108,29 @@ li {
   padding-left: 70px;
   margin-top: 5px;
 }
-li:hover {
+.mycard li:hover {
   transform: scale(1.1);
 }
-a:link, a:visited {
+.mycard a:link {
   color: lightseagreen; 
 }
-.main, .main h1 {
+a:visited{
+    color: grey;
+}
+.main{
+    text-align:center;
+    color:lightseagreen;
+    min-height: 75vh;;
+}
+
+.main h1 {
   text-align:center;
   color:lightseagreen;
+}
+.main h3 {
+    margin-top: 20px;
+}
+.enlaces{
+    text-align:center;
+    color:black;
 }

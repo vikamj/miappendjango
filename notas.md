@@ -36,6 +36,8 @@ pip install -r requirements.txt
 py manage.py collectstatic
 ```
 
+Si no sale favicon.ico, probar con cntl + f5
+
 ## Lista de preguntas
 
 - Preguntas
