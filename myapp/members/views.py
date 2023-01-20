@@ -1,6 +1,14 @@
 from django.http import HttpResponse
 from django.template import loader
 from .models import Member
+import datetime
+
+# CRUD -> Member
+# Create
+def create_member(request):
+  pass
+# Read
+# vista de todos los members -> read all / get all
 
 def members(request):
   mymembers = Member.objects.all().values()
@@ -18,14 +26,14 @@ def details(request, slug):
   }
   return HttpResponse(template.render(context, request))
 
+# Update
+def update_member(request):
+  pass
+
+# Delete
+def delete_member(request):
+  pass
+
 def main(request):
   template = loader.get_template('main.html')
   return HttpResponse(template.render())
-
-def testing(request):
-  mydata = Member.objects.all()
-  template = loader.get_template('template.html')
-  context = {
-    'mymembers': mydata,
-  }
-  return HttpResponse(template.render(context, request))
