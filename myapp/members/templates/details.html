@@ -1,0 +1,30 @@
+{% extends "master.html" %}
+
+{% block title %}
+{% if mymember.id %} Detalles de: {{ mymember.firstname }} {{ mymember.lastname }} {% endif %}
+{% endblock %}
+
+{% block content %}
+
+
+    <div class="mycard">
+        <h1>{{ mymember.firstname }} {{ mymember.lastname }}</h1>
+        <p>Teléfono {{ mymember.phone }}</p>
+        <p>Fecha de registro: {{ mymember.joined_date }}</p>
+        <button onclick="window.location = 'update_member/{{ member.slug }}'">Editar</button>
+        <button onclick="window.location = 'delete/{{ member.slug }}'">Borrar</button>
+    </div>
+
+    
+
+    <p>Volver a <a href="/members">Miembros</a></p>
+
+    <!-- {# "Este botón lleva a /details/slug" #}
+    <li onclick="window.location = 'details/{{ member.slug }}'">{{ member.firstname }} {{ member.lastname }}</li>
+    {# "Este botón lleva a /delete/slug" #}
+    <li onclick="window.location = 'delete/{{ member.slug }}'"> Borrar</li> -->
+
+
+
+
+{% endblock %}
